@@ -1,0 +1,35 @@
+{
+    "name": "christianessl/adminpanel_routing",
+    "type": "typo3-cms-extension",
+    "description": "Debug Routing information in the adminpanel in TYPO3 9.5+.",
+    "keywords": [
+        "TYPO3",
+        "extension"
+    ],
+    "license": ["GPL-2.0-or-later"],
+    "homepage": "https://christianessl.at",
+    "authors": [
+        {
+            "name": "Christian Essl",
+            "role": "Developer"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^9.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChristianEssl\\AdminpanelRouting\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ChristianEssl\\AdminpanelRouting\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "adminpanel_routing": "self.version",
+        "typo3-ter/adminpanel_routing": "self.version"
+    }
+}
