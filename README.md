@@ -12,9 +12,13 @@ For example, for "enhanced" uris, it can show you the "original parameters", the
 PersistedAliasMapper.
 
 This is the first working version of the extension and likely still has a lot of room for improvements. Testing and 
-feature requests are very appreciated.
+feature requests/ideas are very much appreciated.
 
-![Screenshot](/Images/example.jpg)
+## Images
+
+![Screenshot](/Images/example1.jpg)
+
+![Screenshot](/Images/example12.jpg)
 
 ## Requirements
 
@@ -27,7 +31,7 @@ Currently only supports 9.5 LTS.
 `composer require christianessl/adminpanel_routing`. 
 
 ## TODOS
-- Replace ugly XClass (a Event Listener would be required inside the PageRouter class in the core)
+- Replace ugly XClass (An Event Listener would be required inside the PageRouter class in the core)
 - Replace Signal/Slots with PSR-14 Event Listeners (which require TYPO3 10)
 - Also list aspects in the adminpanel
 - Also show debug information for PageRouter::matchRequest()?
