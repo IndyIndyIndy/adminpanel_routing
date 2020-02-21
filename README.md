@@ -18,7 +18,7 @@ feature requests/ideas are very much appreciated.
 
 ![Screenshot](/Images/example1.png)
 
-![Screenshot](/Images/example12.png)
+![Screenshot](/Images/example2.png)
 
 ## Requirements
 
