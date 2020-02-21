@@ -1,0 +1,49 @@
+<html xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="typo3-adminPanel-routing">
+  <div class="typo3-adminPanel-row typo3-adminPanel-row-nowrap typo3-adminPanel-sql-header">
+    <div class="typo3-adminPanel-col"></div>
+    <div class="typo3-adminPanel-col typo3-adminPanel-col-ellipsis typo3-adminPanel-col-auto">
+      <f:translate key="LLL:EXT:adminpanel_routing/Resources/Private/Language/locallang.xlf:submodule.routing.title"/>
+    </div>
+    <div class="typo3-adminPanel-col">
+      <f:translate key="LLL:EXT:adminpanel_routing/Resources/Private/Language/locallang.xlf:submodule.routing.type"/>
+    </div>
+  </div>
+  <f:for each="{generatedUris}" as="uriInfo" iteration="routingIteration">
+    <div class="typo3-adminPanel-row typo3-adminPanel-row-nowrap">
+      <div class="typo3-adminPanel-col typo3-adminPanel-col-icon">
+        <a href="#" title="{f:translate(key: 'LLL:EXT:adminpanel_routing/Resources/Private/Language/locallang.xlf:submodule.routing.details')}" data-typo3-zoom-target="routingInfo-{routingIteration.index}">
+          <core:icon identifier="actions-document-view" alternativeMarkupIdentifier="inline"/>
+        </a>
+      </div>
+      <div class="typo3-adminPanel-col typo3-adminPanel-col-ellipsis typo3-adminPanel-col-auto">
+        <a href="{uriInfo.resolvedUri}" target="_blank">
+          {uriInfo.resolvedUri}
+        </a>
+      </div>
+      <div class="typo3-adminPanel-col">
+        <f:if condition="{uriInfo.enhancer}">
+          <f:then>
+            {uriInfo.enhancer}
+          </f:then>
+          <f:else>
+            <f:translate key="LLL:EXT:adminpanel_routing/Resources/Private/Language/locallang.xlf:submodule.routing.page"/>
+          </f:else>
+        </f:if>
+      </div>
+    </div>
+    <div class="typo3-adminPanel-zoom" data-typo3-zoom-id="routingInfo-{routingIteration.index}">
+      <div class="typo3-adminPanel-zoom-header">
+        <button class="typo3-adminPanel-btn" data-typo3-zoom-close="true">
+          {f:translate(key:'LLL:EXT:adminpanel/Resources/Private/Language/locallang.xlf:button.close')}
+        </button>
+      </div>
+      <div class="typo3-adminPanel-zoom-body">
+        <f:render partial="Data/TableKeyValue" arguments="{label: 'Uri Info', data: uriInfo}" debug="false"/>
+      </div>
+    </div>
+  </f:for>
+</div>
+
+</html>

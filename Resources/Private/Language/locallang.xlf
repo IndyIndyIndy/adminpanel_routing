@@ -3,7 +3,49 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2019-05-15T10:53:25Z">
         <body>
             <trans-unit id="label">
-                <source>Routing Info</source>
+                <source>Routing Information</source>
+            </trans-unit>
+            <trans-unit id="submodule.routing.title">
+                <source>Generated Uris</source>
+            </trans-unit>
+            <trans-unit id="submodule.routing.type">
+                <source>Type</source>
+            </trans-unit>
+            <trans-unit id="submodule.routing.details">
+                <source>Show Details</source>
+            </trans-unit>
+            <trans-unit id="submodule.routing.page">
+                <source>Page</source>
+            </trans-unit>
+            <trans-unit id="page">
+                <source>Page</source>
+            </trans-unit>
+            <trans-unit id="language">
+                <source>Language</source>
+            </trans-unit>
+            <trans-unit id="enhancer">
+                <source>Enhancer</source>
+            </trans-unit>
+            <trans-unit id="arguments">
+                <source>Arguments</source>
+            </trans-unit>
+            <trans-unit id="defaults">
+                <source>Defaults</source>
+            </trans-unit>
+            <trans-unit id="originalParameters">
+                <source>Original Parameters</source>
+            </trans-unit>
+            <trans-unit id="deflatedParameters">
+                <source>Deflated Parameters</source>
+            </trans-unit>
+            <trans-unit id="resolvedParameters">
+                <source>Resolved Parameters</source>
+            </trans-unit>
+            <trans-unit id="intermediateUri">
+                <source>Intermediate Uri</source>
+            </trans-unit>
+            <trans-unit id="resolvedUri">
+                <source>Resolved Uri</source>
             </trans-unit>
         </body>
     </file>
